@@ -1,0 +1,20 @@
+{
+    "name": "noteapp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/htutwaiphyoe/NoteApp-Node.js.git"
+    },
+    "author": "Htut Wai Phyoe",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/htutwaiphyoe/NoteApp-Node.js/issues"
+    },
+    "homepage": "https://github.com/htutwaiphyoe/NoteApp-Node.js#readme",
+    "dependencies": {
+        "validator": "^13.1.17"
+    }
+}

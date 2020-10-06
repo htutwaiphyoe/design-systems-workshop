@@ -1,3 +1,4 @@
-const notes = require("./notes.js");
+const validator = require("validator");
 
-console.log(notes.getNotes());
+console.log(validator.isEmail("foo@bar.com"));
+console.log(validator.isURL("http://foo.com"));
