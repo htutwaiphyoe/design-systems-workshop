@@ -16,6 +16,7 @@
     "homepage": "https://github.com/htutwaiphyoe/NoteApp-Node.js#readme",
     "dependencies": {
         "chalk": "^4.1.0",
-        "validator": "^13.1.17"
+        "validator": "^13.1.17",
+        "yargs": "^16.0.3"
     }
 }

@@ -1,6 +1,8 @@
 const fs = require("fs");
-const getNotes = () => {
+exports.getNotes = getNotes = () => {
     return fs.readFileSync("notes.txt", "utf8");
 };
 
-exports.getNotes = getNotes;
+exports.setNotes = setNotes = (notes) => {
+    fs.writeFileSync("notes.txt", notes);
+};
