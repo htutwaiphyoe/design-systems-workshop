@@ -20,7 +20,15 @@ yargs.command({
         },
     },
     handler: function (argv) {
-        console.log(argv.title, argv.body);
+        let notesData = null;
+        if (!notes.getNotes()) {
+            notesData = [];
+        } else {
+            notesData = [...JSON.parse(notes.getNotes())];
+        }
+        notesData.push({ title: argv.title, body: argv.body });
+        console.log(notesData);
+        notes.setNotes(JSON.stringify(notesData));
     },
 });
 
