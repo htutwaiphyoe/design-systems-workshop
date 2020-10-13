@@ -1,14 +1,14 @@
 const fs = require("fs");
-
+const chalk = require("chalk");
 exports.addNote = (title, body) => {
     const notes = loadNotes();
     const index = notes.findIndex((note) => note.title === title);
     if (index === -1) {
         notes.push({ title, body });
         saveNotes(notes);
-        console.log("Note was added successfully.");
+        console.log(chalk.green.inverse("Note was added successfully."));
     } else {
-        console.log("Title is already in use!");
+        console.log(chalk.bgYellow("Title is already in use!"));
     }
 };
 
@@ -18,9 +18,9 @@ exports.removeNote = (title) => {
     if (index !== -1) {
         notes.splice(index, 1);
         saveNotes(notes);
-        console.log("Note was removed successfully.");
+        console.log(chalk.bgGreen("Note was removed successfully."));
     } else {
-        console.log("There is no note with title " + title);
+        console.log(chalk.bgRed("There is no note with title " + title));
     }
 };
 
@@ -30,7 +30,7 @@ exports.readNote = (title) => {
     if (note) {
         console.log(`${note.title}\n\n${note.body}`);
     } else {
-        console.log("There is no note with title " + title);
+        console.log(chalk.bgRed("There is no note with title " + title));
     }
 };
 
