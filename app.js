@@ -1,6 +1,5 @@
-const notes = require("./notes");
 const yargs = require("yargs");
-const { argv } = require("yargs");
+const notes = require("./notes");
 
 yargs.version("1.1.0");
 
@@ -20,23 +19,22 @@ yargs.command({
         },
     },
     handler: function (argv) {
-        let notesData = null;
-        if (!notes.getNotes()) {
-            notesData = [];
-        } else {
-            notesData = [...JSON.parse(notes.getNotes())];
-        }
-        notesData.push({ title: argv.title, body: argv.body });
-        console.log(notesData);
-        notes.setNotes(JSON.stringify(notesData));
+        notes.addNote(argv.title, argv.body);
     },
 });
 
 yargs.command({
     command: "remove",
     description: "Remove a note",
-    handler: function () {
-        console.log("Removing");
+    builder: {
+        title: {
+            description: "Note Title",
+            demandOption: true,
+            type: "string",
+        },
+    },
+    handler: function (argv) {
+        notes.removeNote(argv.title);
     },
 });
 
