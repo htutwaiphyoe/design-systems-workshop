@@ -1,1 +1,4 @@
-[{"title":"Wake up","body":"6:00 AM"},{"title":"Breakfast","body":"7:30 AM"}]
+[
+    { "title": "Wake up", "body": "6:00 AM" },
+    { "title": "Breakfast", "body": "7:30 AM" }
+]

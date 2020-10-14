@@ -28,15 +28,16 @@ exports.readNote = (title) => {
     const notes = loadNotes();
     const note = notes.find((note) => note.title === title);
     if (note) {
-        console.log(`${note.title}\n\n${note.body}`);
+        console.log(`${chalk.white.inverse(note.title)}\n${note.body}`);
     } else {
-        console.log(chalk.bgRed("There is no note with title " + title));
+        console.log(chalk.bgRed("Unable to find note with title " + title));
     }
 };
 
 exports.listNotes = () => {
     const notes = loadNotes();
-    notes.forEach((note) => console.log(`${note.title}\n\n${note.body}\n\n`));
+    console.log(chalk.white.inverse("Your notes"));
+    notes.forEach((note) => console.log(`${note.title}`));
 };
 const saveNotes = (notes) => {
     fs.writeFileSync(`${__dirname}/notes.json`, JSON.stringify(notes), "utf8");
