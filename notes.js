@@ -55,3 +55,18 @@ exports.readNote = (title) => {
         console.log(chalk.yellow.inverse("There is no note with title " + title));
     }
 };
+
+// list notes with title
+
+exports.listNotes = () => {
+    const notes = loadFile();
+
+    if (notes.length > 0) {
+        console.log(chalk.whiteBright.inverse("Your notes"));
+        notes.forEach((note, i) => {
+            console.log(chalk.whiteBright(`${i}. ${note}`));
+        });
+    } else {
+        console.log(chalk.yellowBright("No notes found"));
+    }
+};

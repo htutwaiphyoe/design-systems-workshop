@@ -55,4 +55,15 @@ yargs.command({
         notes.readNote(argv.title);
     },
 });
+
+// list command
+
+yargs.command({
+    command: "list",
+    description: "List Notes",
+    handler() {
+        notes.listNotes();
+    },
+});
+
 yargs.parse();
