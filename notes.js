@@ -43,3 +43,15 @@ exports.removeNote = (title) => {
         console.log(chalk.yellowBright.inverse("There is no note with title " + title));
     else console.log(chalk.green.inverse("Note removed successfully"));
 };
+
+// read a note from data
+
+exports.readNote = (title) => {
+    const notes = loadFile();
+    const note = notes.find((note) => note.title === title);
+    if (note) {
+        console.log(`${chalk.white.inverse(note.title)} \n\n${note.body}`);
+    } else {
+        console.log(chalk.yellow.inverse("There is no note with title " + title));
+    }
+};
