@@ -13,15 +13,18 @@ Organized by Ma Chaw Su Hlaing (Founder of Productive Schedule)
 - How you set up Env to use DS
 - How to install DS
 - How it is managed with version control
-- what do you look for in a DS?
-- create a netflix landing page with MUI without customizing too much to the default components
-- how you change properties of a component
-- what’s your challenges using DS?
-- why we use DS?
+- What do you look for in a DS?
+- Create a netflix landing page with MUI without customizing too much to the default components
+- How you change properties of a component
+- What’s your challenges using DS?
+- Why we use DS?
 
 ## 2. Developer Perspective
 
-- tech stack, framework compatibility, community support (documentation, maintainers)
+- Tech stack (React/Vue)
+- Framework compatibility (MUI/Ant Design)
+- Open-Source (Free/Paid)
+- Community support (Documentation, Maintainers)
 - Customization (theme, components)
 - Component Coverage
 - Accessibility (color, keyboard)
