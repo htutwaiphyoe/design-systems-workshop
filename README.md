@@ -1,6 +1,6 @@
-# Design System Workshop by Productive Schedule
+# Design System Workshop by The Productive Schedule
 
-Organized by Ma Chaw Su Hlaing (Founder of Productive Schedule)
+Organized by Ma Chaw Su Hlaing (Founder of The Productive Schedule)
 
 ## Table of contents
 
