@@ -1,0 +1,19 @@
+$blue: #29339b;
+$red: rgb(229, 9, 20);
+$green: #5dfc70;
+$black: #010101;
+$white: #ffffff;
+$lightGray: rgba(255, 255, 255, 0.7);
+$darkGray: rgb(45, 45, 45);
+$darkerGray: rgb(35, 35, 35);
+
+:export {
+  blue: $blue;
+  red: $red;
+  green: $green;
+  black: $black;
+  white: $white;
+  lightGray: $lightGray;
+  darkGray: $darkGray;
+  darkerGray: $darkerGray;
+}
