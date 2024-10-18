@@ -21,7 +21,7 @@ Organized by Ma Chaw Su Hlaing (Founder of The Productive Schedule)
 - How you change properties of a component
 - What’s your challenges using DS?
 - Why we use DS?
-- Differences between MUI and Bootstraps
+- What the differences between MUI and Bootstraps are
 
 ## 2. Developer Perspective
 
