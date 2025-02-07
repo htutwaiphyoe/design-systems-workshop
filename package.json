@@ -1,0 +1,12 @@
+{
+  "name": "design-systems-workshop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Design Systems Workshop",
+  "author": "Htut Wai Phyo",
+  "scripts": {
+    "dev:batch-3": "cd the-productive-schedule/batch-3 && pnpm dev",
+    "dev:batch-4": "cd the-productive-schedule/batch-4 && pnpm dev",
+    "dev:batch-5": "cd the-productive-schedule/batch-5 && pnpm dev"
+  }
+}
